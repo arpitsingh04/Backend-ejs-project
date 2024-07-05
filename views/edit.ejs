@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit File</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+        <a href="/" class="text-blue-500 inline-block mb-10">go back to home</a>
+        
+        <form action="/create" method="post">
+            <input
+              class="block px-5 w-1/4 rounded-md py-2 bg-zinc-700 outline-none"
+              type="text"
+              placeholder="Previous name"
+              name="previous"
+              value="<%= name %>"
+            />
+            <input
+              class="block px-5 w-1/4 rounded-md py-2 bg-zinc-700 outline-none mt-2"
+              type="text"
+              placeholder="New name"
+              name="new"
+            />
+          
+            <div class="flex items-center">
+              <button
+                class="mt-2 bg-yellow-600 text-black px-5 py-2 rounded-md"
+                type="submit"
+                value="create task"
+              >
+                update name
+              </button>
+            </div>
+          </form>
+    </div>
+</body>
+</html>
